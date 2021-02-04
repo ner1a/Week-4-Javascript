@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="register">
+        <figure class="register__edit">
+            <img src="img/edit.svg" alt="Register icon">
+        </figure>
+        <h1 class="register__title text">REGISTER</h1>
+        <div class="register__icons">
+            <figure class="register__icon"><a href=""><img src="/Works/Week 1 Card and Form/Form/img/facebook.svg" alt="Login with Facebook"></a></figure>
+            <figure class="register__icon"><a href=""><img src="/Works/Week 1 Card and Form/Form/img/google-plus.svg" alt="Login with Google"></a></figure>
+            <figure class="register__icon"><a href=""><img src="/Works/Week 1 Card and Form/Form/img/twitter.svg" alt="Login with Twitter"></a></figure>
+        </div>
+        <span class="register__span text">or use your e mail address:</span>
+        <input type="text" placeholder="username" class="register__input text username" id="username" disabled>
+        <form action="" class="form" id="form">
+            <input type="text" placeholder="First Name" class="register__input text" id="name">
+            <input type="text" placeholder="Last Name" class="register__input text" id="sirname">
+            <input type="email" placeholder="Email" class="register__input text" id="mail">
+            <input type="password" placeholder="Password" class="register__input text" id="pw">
+            <input type="password" placeholder="Password Confirm" class="register__input text" id="pw-confirm">
+            <button type="button" class="button text" id="button">CREATE ACCOUNT</button>
+        </form>
+        <div>        
+            <span class="register__span text">Already have an account?</span>
+            <a href="" class="register__sign-in text">Sign In</a>
+        </div>
+        <div class="alert-container" id="alert-div">
+            <span class="register__span text alert" id="alert"></span>
+        </div>
+    </div>
+    <script src="./JS Input Control.js"></script>
+</body>
+</html>
