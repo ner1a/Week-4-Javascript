@@ -9,10 +9,10 @@ var button = document.getElementById("button");
 var alertText = document.getElementById("alert");
 var inputs = document.querySelectorAll(".form input");
 var alertDiv = document.getElementById("alert-div");
-var hata = 0;
 
 button.addEventListener("click", function() {
     alertText.innerHTML = "";
+    var hata = 0;
     for (var e of inputs) {
         if (e.value === "") {
             alertText.innerHTML += "* " + e.placeholder + " can't be empty<br>";
@@ -22,8 +22,6 @@ button.addEventListener("click", function() {
         }
         else if (e.value !== "") {
             e.classList.remove("error-input");
-            alertText.innerHTML = ""
-            hata = 0;
         }
     }
     if (pw.value.length < 8) {
@@ -48,8 +46,6 @@ button.addEventListener("click", function() {
     else{
         pw.classList.remove("error-input");
         pwConfirm.classList.remove("error-input");
-        alertText.innerHTML = ""
-        hata = 0;
     }
     if (hata === 0) {
         form.classList.add("form-disabled");
